@@ -4,7 +4,6 @@ const expressApp = express();
 const path = require('path');
 const router = express.Router();
 function createWindow () {
-  // Create the browser window.
   const win = new BrowserWindow({
     width: 800,
     height: 600,
@@ -13,7 +12,6 @@ function createWindow () {
     }
   });
 
-  // and load the index.html of the app.
   win.loadFile('views/index.html');
 }
 
